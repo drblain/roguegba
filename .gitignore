@@ -1,6 +1,5 @@
 .vscode/
 build/
-cmakebuild/
 *.gba
 *.elf
 *.sav
