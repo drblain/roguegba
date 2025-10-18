@@ -1,19 +1,26 @@
 #include <tonc.h>
 
-typedef struct
-{
-    u32 x;
-    u32 y;
-} Pos;
-
 int main(void) {
     irq_init(NULL);
     irq_add(II_VBLANK, NULL);
-    REG_DISPCNT= DCNT_MODE5 | DCNT_BG2;
+    
+    // --- Initial setup ---
+    // Initialize video mode
+    // Load assets into VRAM
+    // Set up initial game state
+    // Set up game inputs
 
     while(1)
     {
+        // --- Input handling --- 
+
+        // --- Game logic update ---
+
+        // --- Rendering ---
+
         VBlankIntrWait();
+
+        // --- VBlank operations ---
     }
 
     return 0;
